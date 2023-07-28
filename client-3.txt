@@ -1,0 +1,178 @@
+[ 2023-06-21 20:07:46 ] clus_init_event_ctx: Initializing SVC my-svc-3:127.0.0.4
+
+[ 2023-06-21 20:07:46 ] clus_init_event_ctx: CEM desktop mode
+
+[ 2023-06-21 20:07:46 ] clus_init_event_ctx: Desktop mode will use svc IP as loopback IP default/user provided 
+
+[ 2023-06-21 20:07:46 ] GRPC channel has been created to 127.0.0.1
+
+[ 2023-06-21 20:07:46 ] Couldn't find existing GRPC session for client 127.0.0.1:5672
+
+[ 2023-06-21 20:07:46 ] GRPC client session created on 127.0.0.1:5672
+
+[ 2023-06-21 20:07:46 ] Add CB entry: local_high_pri 2
+
+[ 2023-06-21 20:07:46 ]  _clus_event_subscribe: Sending SUB Event RQ for svc my-svc-3
+
+[ 2023-06-21 20:07:46 ] GRPC CL server registered for 127.0.0.4 on Port: 5673
+
+[ 2023-06-21 20:07:46 ] GRPC client start sending below message to CEM server: client ==> CEM
+
+[ 2023-06-21 20:07:46 ] clus_req { req_type: REQ_SUBS req_info { sub_info { svc_name: "my-svc-3" clus_ip: "127.0.0.4" high_priority_list { high_svc_pri: 2 } conn_client_rq: 1 } } req_data { } old_mem_i { } new_mem_i { } }
+
+[ 2023-06-21 20:07:46 ] GRPC CL server received below published event: CEM ==> client
+
+[ 2023-06-21 20:07:46 ] clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 4 gen_id { } for_req: REQ_SUBS } } req_data { } old_mem_i { } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } }
+
+[ 2023-06-21 20:07:46 ] Subscribe ACK received; subs_id : 4
+
+[ 2023-06-21 20:07:46 ] Subscribe rpc succeeded.
+
+[ 2023-06-21 20:07:46 ]  _clus_event_subscribe: SUBS ACK received 
+
+[ 2023-06-21 20:07:46 ]  _clus_event_subscribe: SUBS RQ sent: Waiting to receive own service event 
+
+[ 2023-06-21 20:07:46 ] GRPC CL server received below published event: CEM ==> client
+
+[ 2023-06-21 20:07:46 ] clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 1 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-3" event_status: READY ip: "127.0.0.4" } } } } req_data { } old_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } mems { name: "my-svc-3" Cluster_IP: "127.0.0.4" state: 3 global_gen_id: 3 } } }
+
+[ 2023-06-21 20:07:46 ] _clus_event_client_loop: Subsriber ID assigned 4
+
+[ 2023-06-21 20:07:46 ]  _clus_event_client_loop: Event received from prod_id  4
+
+[ 2023-06-21 20:07:46 ] process_cb: Executing callback with priority_id : 1
+
+[ 2023-06-21 20:07:46 ] This is Func1
+
+[ 2023-06-21 20:07:46 ] 	print_event_msg : Event Header: 
+
+[ 2023-06-21 20:07:46 ] 		Request_Type : 5
+
+[ 2023-06-21 20:07:46 ]   		Subscriber id 4
+
+[ 2023-06-21 20:07:46 ]   		Global event id in generation_id 3
+
+[ 2023-06-21 20:07:46 ]  		event type 1
+
+[ 2023-06-21 20:07:46 ]    	Recived K8s type of event ************************
+
+[ 2023-06-21 20:07:46 ]    		event status 3
+
+[ 2023-06-21 20:07:46 ] 	  	name my-svc-3
+
+[ 2023-06-21 20:07:46 ] 	  	IP 127.0.0.4
+
+[ 2023-06-21 20:07:46 ] 	Print Members : old and new
+
+[ 2023-06-21 20:07:46 ] 		Old Members ******************************
+
+[ 2023-06-21 20:07:46 ] 	Membership: Services
+
+[ 2023-06-21 20:07:46 ] 		 SVC name: my-svc-1    	SVC IP: 127.0.0.2    	SVC-global-gen-ID: 1    	SVC-state: READY
+
+[ 2023-06-21 20:07:46 ] 		 SVC name: my-svc-2    	SVC IP: 127.0.0.3    	SVC-global-gen-ID: 2    	SVC-state: READY
+
+[ 2023-06-21 20:07:46 ] 	Membership: Nodes
+
+[ 2023-06-21 20:07:46 ] 		New Members ******************************
+
+[ 2023-06-21 20:07:46 ] 	Membership: Services
+
+[ 2023-06-21 20:07:46 ] 		 SVC name: my-svc-1    	SVC IP: 127.0.0.2    	SVC-global-gen-ID: 1    	SVC-state: READY
+
+[ 2023-06-21 20:07:46 ] 		 SVC name: my-svc-2    	SVC IP: 127.0.0.3    	SVC-global-gen-ID: 2    	SVC-state: READY
+
+[ 2023-06-21 20:07:46 ] 		 SVC name: my-svc-3    	SVC IP: 127.0.0.4    	SVC-global-gen-ID: 3    	SVC-state: READY
+
+[ 2023-06-21 20:07:46 ] 	Membership: Nodes
+
+[ 2023-06-21 20:07:46 ] Client_loop: Subs 4 sending ACK for_req 5, gen_id 3 producer_id 4
+
+[ 2023-06-21 20:07:46 ] GRPC start posting event as below: client ==> CEM 
+
+[ 2023-06-21 20:07:46 ] clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 4 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+
+[ 2023-06-21 20:07:46 ] post event rpc succeeded.
+
+[ 2023-06-21 20:07:46 ] client_loop: ACK for the event sent **********: bytes sent 1, tot 115760
+
+[ 2023-06-21 20:07:46 ] GRPC CL server received below published event: CEM ==> client
+
+[ 2023-06-21 20:07:46 ] clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 2 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-3" event_status: READY ip: "127.0.0.4" } } } } req_data { } old_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } mems { name: "my-svc-3" Cluster_IP: "127.0.0.4" state: 3 global_gen_id: 3 } } }
+
+[ 2023-06-21 20:07:46 ]  _clus_event_client_loop: Event received from prod_id  4
+
+[ 2023-06-21 20:07:46 ] process_cb: Executing callback with priority_id : 2
+
+[ 2023-06-21 20:07:46 ] This is Func2
+
+[ 2023-06-21 20:07:46 ] 	print_event_msg : Event Header: 
+
+[ 2023-06-21 20:07:46 ] 		Request_Type : 5
+
+[ 2023-06-21 20:07:46 ]   		Subscriber id 4
+
+[ 2023-06-21 20:07:46 ]   		Global event id in generation_id 3
+
+[ 2023-06-21 20:07:46 ]  		event type 1
+
+[ 2023-06-21 20:07:46 ]    	Recived K8s type of event ************************
+
+[ 2023-06-21 20:07:46 ]    		event status 3
+
+[ 2023-06-21 20:07:46 ] 	  	name my-svc-3
+
+[ 2023-06-21 20:07:46 ] 	  	IP 127.0.0.4
+
+[ 2023-06-21 20:07:46 ] 	Print Members : old and new
+
+[ 2023-06-21 20:07:46 ] 		Old Members ******************************
+
+[ 2023-06-21 20:07:46 ] 	Membership: Services
+
+[ 2023-06-21 20:07:46 ] 		 SVC name: my-svc-1    	SVC IP: 127.0.0.2    	SVC-global-gen-ID: 1    	SVC-state: READY
+
+[ 2023-06-21 20:07:46 ] 		 SVC name: my-svc-2    	SVC IP: 127.0.0.3    	SVC-global-gen-ID: 2    	SVC-state: READY
+
+[ 2023-06-21 20:07:46 ] 	Membership: Nodes
+
+[ 2023-06-21 20:07:46 ] 		New Members ******************************
+
+[ 2023-06-21 20:07:46 ] 	Membership: Services
+
+[ 2023-06-21 20:07:46 ] 		 SVC name: my-svc-1    	SVC IP: 127.0.0.2    	SVC-global-gen-ID: 1    	SVC-state: READY
+
+[ 2023-06-21 20:07:46 ] 		 SVC name: my-svc-2    	SVC IP: 127.0.0.3    	SVC-global-gen-ID: 2    	SVC-state: READY
+
+[ 2023-06-21 20:07:46 ] 		 SVC name: my-svc-3    	SVC IP: 127.0.0.4    	SVC-global-gen-ID: 3    	SVC-state: READY
+
+[ 2023-06-21 20:07:46 ] 	Membership: Nodes
+
+[ 2023-06-21 20:07:46 ] Client_loop: Subs 4 sending ACK for_req 5, gen_id 3 producer_id 4
+
+[ 2023-06-21 20:07:46 ] GRPC start posting event as below: client ==> CEM 
+
+[ 2023-06-21 20:07:46 ] clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 4 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+
+[ 2023-06-21 20:07:46 ] post event rpc succeeded.
+
+[ 2023-06-21 20:07:46 ] client_loop: ACK for the event sent **********: bytes sent 1, tot 115760
+
+[ 2023-06-21 20:07:46 ]  _clus_event_subscribe: All cbs executed for own service up event
+
+[ 2023-06-21 20:07:46 ]  _clus_event_subscribe: SVC my-svc-3 is READY, Subscribe op succeeded 
+
+[ 2023-06-21 20:07:46 ] clus_event_subscribe: subs id : 4 
+
+[ 2023-06-21 20:07:46 ] main() : creating thread 0 
+
+[ 2023-06-21 20:07:46 ] Thread 0 created
+
+[ 2023-06-21 20:07:46 ] clus_event_client_loop: CEM server is running under GRPC mode, return  client loop
+
+[ 2023-06-21 20:07:46 ] The client has subscribed to CEM
+
+[ 2023-06-21 20:07:46 ] Subscribed, Poll for incoming events 
+
+[ 2023-06-21 20:07:46 ] Waiting before issuing next command
+

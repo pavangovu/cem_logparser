@@ -1,0 +1,1402 @@
+[
+  {
+    "timestamp": "2023-06-21 20:04:28",
+    "type": "default",
+    "message": "main() : creating thread, 0"
+  },
+  {
+    "timestamp": "2023-06-21 20:04:28",
+    "type": "default",
+    "message": "main() : creating thread, 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:04:28",
+    "type": "default",
+    "message": "Thread with id : 0"
+  },
+  {
+    "timestamp": "2023-06-21 20:04:28",
+    "type": "default",
+    "message": "Thread with id : 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:04:28",
+    "type": "default",
+    "message": "CEM GRPC server start listening:"
+  },
+  {
+    "timestamp": "2023-06-21 20:04:28",
+    "type": "default",
+    "message": "Main: completed thread id :0"
+  },
+  {
+    "timestamp": "2023-06-21 20:04:28",
+    "type": "default",
+    "message": "exiting with status :0"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "GRPC CEM server received below message: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_SUBS req_info { sub_info { svc_name: \"my-svc-1\" clus_ip: \"127.0.0.2\" high_priority_list { high_svc_pri: 2 } conn_client_rq: 1 } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "New event received ; event type1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Event type received REQ_SUBS from subs my-svc-1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Not Found subscriber in the subscriber list my-svc-1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Subscriber my-svc-1 is a new subscriber"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Session destroy for SUBS rq for subscriber my-svc-1"
+  },
+  {
+    "timestamp": "Creating svc event for SUBS rq for subscriber my-svc-",
+    "type": "default",
+    "message": "Creating svc event for SUBS rq for subscriber my-svc-1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Added conn for subs 2 current high svc pri 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "REQ_SUBS:  Subs_id 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Updated Subscriber 2 to subs_list for REQ TYPE 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Subs_id : 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Process event message: Print ACK to be sent: members"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Service Members :"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "CEM GRPC server start sending back ACK event to clus_IP: 127.0.0.2 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Couldn't find existing GRPC session for client 127.0.0.2:5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "GRPC client session create on 127.0.0.2:5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { } for_req: REQ_SUBS } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "ACK sent  to SUBS 2  msg send size 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "REQ_SUBS: Birth Gen Id 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Message Queued for subs_id  2  Client RQ 1 Gen id 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Cur Services list ....."
+  },
+  {
+    "timestamp": "Membership: Service",
+    "type": "default",
+    "message": "Membership: Services"
+  },
+  {
+    "timestamp": "SVC name: my-svc-1           SVC IP: 127.0.0.2             SVC-state: read",
+    "type": "default",
+    "message": "SVC name: my-svc-1           SVC IP: 127.0.0.2             SVC-state: ready"
+  },
+  {
+    "timestamp": "Membership: Node",
+    "type": "default",
+    "message": "Membership: Nodes"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": ""
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Queued the event for subs my-svc-1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Found message in the Queue"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Current subscribers to receive the event to exe pri_id callback 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "CEM GRPC server start publish event to subs_id 2 subs IP 127.0.0.2 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 2 cur_exe_pri: 1 cur_id: 1 gen_id { global_seq_id: 1 subs_id: 2 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: \"my-svc-1\" event_status: READY ip: \"127.0.0.2\" } } } } req_data { } old_mem_i { } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "GRPC CEM server received below post event: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { global_seq_id: 1 subs_id: 2 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "New event received ; event type3"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:41",
+    "type": "default",
+    "message": "Recevied REQ_ACK from subs 2, For Rq 5, Gen-id  1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Ack pushed: subs_id, for_req, gen_id: 2,   5,   1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Queued REQ_ACK from subs 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Pri_id 1 callback notified. Msg gen id 1 to subs_id: 2 and  size_to_be_sent:115760"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Check ack from subscriber 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Received ACK from subscriber 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Ack received from subs id 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Current subscribers to receive the event to exe pri_id callback 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "CEM GRPC server start publish event to subs_id 2 subs IP 127.0.0.2 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 2 cur_exe_pri: 2 cur_id: 1 gen_id { global_seq_id: 1 subs_id: 2 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: \"my-svc-1\" event_status: READY ip: \"127.0.0.2\" } } } } req_data { } old_mem_i { } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "GRPC CEM server received below post event: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { global_seq_id: 1 subs_id: 2 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "New event received ; event type3"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Recevied REQ_ACK from subs 2, For Rq 5, Gen-id  1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Ack pushed: subs_id, for_req, gen_id: 2,   5,   1"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Queued REQ_ACK from subs 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Pri_id 2 callback notified. Msg gen id 1 to subs_id: 2 and  size_to_be_sent:115760"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Check ack from subscriber 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Received ACK from subscriber 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:05:42",
+    "type": "default",
+    "message": "Ack received from subs id 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "GRPC CEM server received below message: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_SUBS req_info { sub_info { svc_name: \"my-svc-2\" clus_ip: \"127.0.0.3\" high_priority_list { high_svc_pri: 2 } conn_client_rq: 1 } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "New event received ; event type1"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Event type received REQ_SUBS from subs my-svc-2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Not Found subscriber in the subscriber list my-svc-2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Subscriber my-svc-2 is a new subscriber"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Session destroy for SUBS rq for subscriber my-svc-2"
+  },
+  {
+    "timestamp": "Creating svc event for SUBS rq for subscriber my-svc-",
+    "type": "default",
+    "message": "Creating svc event for SUBS rq for subscriber my-svc-2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Added conn for subs 3 current high svc pri 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "REQ_SUBS:  Subs_id 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Updated Subscriber 3 to subs_list for REQ TYPE 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Subs_id : 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Subs_id : 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Process event message: Print ACK to be sent: members"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Service Members :"
+  },
+  {
+    "timestamp": "0: my-svc-1, IP: 127.0.0.2, state:",
+    "type": "default",
+    "message": "0: my-svc-1, IP: 127.0.0.2, state: 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "CEM GRPC server start sending back ACK event to clus_IP: 127.0.0.3 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Couldn't find existing GRPC session for client 127.0.0.3:5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "GRPC client session create on 127.0.0.3:5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 3 gen_id { } for_req: REQ_SUBS } } req_data { } old_mem_i { } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "ACK sent  to SUBS 3  msg send size 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "REQ_SUBS: Birth Gen Id 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Message Queued for subs_id  3  Client RQ 1 Gen id 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Cur Services list ....."
+  },
+  {
+    "timestamp": "Membership: Service",
+    "type": "default",
+    "message": "Membership: Services"
+  },
+  {
+    "timestamp": "SVC name: my-svc-1           SVC IP: 127.0.0.2             SVC-state: read",
+    "type": "default",
+    "message": "SVC name: my-svc-1           SVC IP: 127.0.0.2             SVC-state: ready"
+  },
+  {
+    "timestamp": "SVC name: my-svc-2           SVC IP: 127.0.0.3             SVC-state: read",
+    "type": "default",
+    "message": "SVC name: my-svc-2           SVC IP: 127.0.0.3             SVC-state: ready"
+  },
+  {
+    "timestamp": "Membership: Node",
+    "type": "default",
+    "message": "Membership: Nodes"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": ""
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Queued the event for subs my-svc-2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Found message in the Queue"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Current subscribers to receive the event to exe pri_id callback 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "CEM GRPC server start publish event to subs_id 2 subs IP 127.0.0.2 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 3 cur_exe_pri: 1 cur_id: 2 gen_id { global_seq_id: 2 subs_id: 3 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: \"my-svc-2\" event_status: READY ip: \"127.0.0.3\" } } } } req_data { } old_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "GRPC CEM server received below post event: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { global_seq_id: 2 subs_id: 3 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "New event received ; event type3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Recevied REQ_ACK from subs 2, For Rq 5, Gen-id  2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Ack pushed: subs_id, for_req, gen_id: 2,   5,   2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Queued REQ_ACK from subs 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Pri_id 1 callback notified. Msg gen id 2 to subs_id: 2 and  size_to_be_sent:115760"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Check ack from subscriber 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Received ACK from subscriber 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Ack received from subs id 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "CEM GRPC server start publish event to subs_id 3 subs IP 127.0.0.3 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 3 cur_exe_pri: 1 cur_id: 2 gen_id { global_seq_id: 2 subs_id: 3 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: \"my-svc-2\" event_status: READY ip: \"127.0.0.3\" } } } } req_data { } old_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "GRPC CEM server received below post event: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 3 gen_id { global_seq_id: 2 subs_id: 3 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "New event received ; event type3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Recevied REQ_ACK from subs 3, For Rq 5, Gen-id  2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Ack pushed: subs_id, for_req, gen_id: 3,   5,   2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Queued REQ_ACK from subs 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Pri_id 1 callback notified. Msg gen id 2 to subs_id: 3 and  size_to_be_sent:115760"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Check ack from subscriber 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Received ACK from subscriber 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Ack received from subs id 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Current subscribers to receive the event to exe pri_id callback 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "CEM GRPC server start publish event to subs_id 2 subs IP 127.0.0.2 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 3 cur_exe_pri: 2 cur_id: 2 gen_id { global_seq_id: 2 subs_id: 3 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: \"my-svc-2\" event_status: READY ip: \"127.0.0.3\" } } } } req_data { } old_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "GRPC CEM server received below post event: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { global_seq_id: 2 subs_id: 3 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "New event received ; event type3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Recevied REQ_ACK from subs 2, For Rq 5, Gen-id  2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Ack pushed: subs_id, for_req, gen_id: 2,   5,   2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Queued REQ_ACK from subs 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Pri_id 2 callback notified. Msg gen id 2 to subs_id: 2 and  size_to_be_sent:115760"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Check ack from subscriber 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Received ACK from subscriber 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Ack received from subs id 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "CEM GRPC server start publish event to subs_id 3 subs IP 127.0.0.3 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 3 cur_exe_pri: 2 cur_id: 2 gen_id { global_seq_id: 2 subs_id: 3 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: \"my-svc-2\" event_status: READY ip: \"127.0.0.3\" } } } } req_data { } old_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "GRPC CEM server received below post event: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 3 gen_id { global_seq_id: 2 subs_id: 3 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "New event received ; event type3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Recevied REQ_ACK from subs 3, For Rq 5, Gen-id  2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Ack pushed: subs_id, for_req, gen_id: 3,   5,   2"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Queued REQ_ACK from subs 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Pri_id 2 callback notified. Msg gen id 2 to subs_id: 3 and  size_to_be_sent:115760"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Check ack from subscriber 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Received ACK from subscriber 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:06:30",
+    "type": "default",
+    "message": "Ack received from subs id 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CEM server received below message: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_SUBS req_info { sub_info { svc_name: \"my-svc-3\" clus_ip: \"127.0.0.4\" high_priority_list { high_svc_pri: 2 } conn_client_rq: 1 } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "New event received ; event type1"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Event type received REQ_SUBS from subs my-svc-3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Not Found subscriber in the subscriber list my-svc-3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Subscriber my-svc-3 is a new subscriber"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Session destroy for SUBS rq for subscriber my-svc-3"
+  },
+  {
+    "timestamp": "Creating svc event for SUBS rq for subscriber my-svc-",
+    "type": "default",
+    "message": "Creating svc event for SUBS rq for subscriber my-svc-3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Added conn for subs 4 current high svc pri 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "REQ_SUBS:  Subs_id 4"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Updated Subscriber 4 to subs_list for REQ TYPE 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Subs_id : 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Subs_id : 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Subs_id : 4"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Process event message: Print ACK to be sent: members"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Service Members :"
+  },
+  {
+    "timestamp": "0: my-svc-1, IP: 127.0.0.2, state:",
+    "type": "default",
+    "message": "0: my-svc-1, IP: 127.0.0.2, state: 3"
+  },
+  {
+    "timestamp": "1: my-svc-2, IP: 127.0.0.3, state:",
+    "type": "default",
+    "message": "1: my-svc-2, IP: 127.0.0.3, state: 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "CEM GRPC server start sending back ACK event to clus_IP: 127.0.0.4 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Couldn't find existing GRPC session for client 127.0.0.4:5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC client session create on 127.0.0.4:5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 4 gen_id { } for_req: REQ_SUBS } } req_data { } old_mem_i { } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "ACK sent  to SUBS 4  msg send size 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "REQ_SUBS: Birth Gen Id 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Message Queued for subs_id  4  Client RQ 1 Gen id 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Cur Services list ....."
+  },
+  {
+    "timestamp": "Membership: Service",
+    "type": "default",
+    "message": "Membership: Services"
+  },
+  {
+    "timestamp": "SVC name: my-svc-1           SVC IP: 127.0.0.2             SVC-state: read",
+    "type": "default",
+    "message": "SVC name: my-svc-1           SVC IP: 127.0.0.2             SVC-state: ready"
+  },
+  {
+    "timestamp": "SVC name: my-svc-2           SVC IP: 127.0.0.3             SVC-state: read",
+    "type": "default",
+    "message": "SVC name: my-svc-2           SVC IP: 127.0.0.3             SVC-state: ready"
+  },
+  {
+    "timestamp": "SVC name: my-svc-3           SVC IP: 127.0.0.4             SVC-state: read",
+    "type": "default",
+    "message": "SVC name: my-svc-3           SVC IP: 127.0.0.4             SVC-state: ready"
+  },
+  {
+    "timestamp": "Membership: Node",
+    "type": "default",
+    "message": "Membership: Nodes"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": ""
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Queued the event for subs my-svc-3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Found message in the Queue"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Current subscribers to receive the event to exe pri_id callback 1"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "CEM GRPC server start publish event to subs_id 2 subs IP 127.0.0.2 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 1 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: \"my-svc-3\" event_status: READY ip: \"127.0.0.4\" } } } } req_data { } old_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } mems { name: \"my-svc-3\" Cluster_IP: \"127.0.0.4\" state: 3 global_gen_id: 3 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CEM server received below post event: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "New event received ; event type3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Recevied REQ_ACK from subs 2, For Rq 5, Gen-id  3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Ack pushed: subs_id, for_req, gen_id: 2,   5,   3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Queued REQ_ACK from subs 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Pri_id 1 callback notified. Msg gen id 3 to subs_id: 2 and  size_to_be_sent:115760"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Check ack from subscriber 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Received ACK from subscriber 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Ack received from subs id 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "CEM GRPC server start publish event to subs_id 3 subs IP 127.0.0.3 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 1 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: \"my-svc-3\" event_status: READY ip: \"127.0.0.4\" } } } } req_data { } old_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } mems { name: \"my-svc-3\" Cluster_IP: \"127.0.0.4\" state: 3 global_gen_id: 3 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CEM server received below post event: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "New event received ; event type3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Recevied REQ_ACK from subs 3, For Rq 5, Gen-id  3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Ack pushed: subs_id, for_req, gen_id: 3,   5,   3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Queued REQ_ACK from subs 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Pri_id 1 callback notified. Msg gen id 3 to subs_id: 3 and  size_to_be_sent:115760"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Check ack from subscriber 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Received ACK from subscriber 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Ack received from subs id 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "CEM GRPC server start publish event to subs_id 4 subs IP 127.0.0.4 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 1 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: \"my-svc-3\" event_status: READY ip: \"127.0.0.4\" } } } } req_data { } old_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } mems { name: \"my-svc-3\" Cluster_IP: \"127.0.0.4\" state: 3 global_gen_id: 3 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CEM server received below post event: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 4 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "New event received ; event type3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Recevied REQ_ACK from subs 4, For Rq 5, Gen-id  3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Ack pushed: subs_id, for_req, gen_id: 4,   5,   3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Queued REQ_ACK from subs 4"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Pri_id 1 callback notified. Msg gen id 3 to subs_id: 4 and  size_to_be_sent:115760"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Check ack from subscriber 4"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Received ACK from subscriber 4"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Ack received from subs id 4"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Current subscribers to receive the event to exe pri_id callback 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "CEM GRPC server start publish event to subs_id 2 subs IP 127.0.0.2 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 2 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: \"my-svc-3\" event_status: READY ip: \"127.0.0.4\" } } } } req_data { } old_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } mems { name: \"my-svc-3\" Cluster_IP: \"127.0.0.4\" state: 3 global_gen_id: 3 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CEM server received below post event: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "New event received ; event type3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Recevied REQ_ACK from subs 2, For Rq 5, Gen-id  3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Ack pushed: subs_id, for_req, gen_id: 2,   5,   3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Queued REQ_ACK from subs 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Pri_id 2 callback notified. Msg gen id 3 to subs_id: 2 and  size_to_be_sent:115760"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Check ack from subscriber 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Received ACK from subscriber 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Ack received from subs id 2"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "CEM GRPC server start publish event to subs_id 3 subs IP 127.0.0.3 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 2 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: \"my-svc-3\" event_status: READY ip: \"127.0.0.4\" } } } } req_data { } old_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } mems { name: \"my-svc-3\" Cluster_IP: \"127.0.0.4\" state: 3 global_gen_id: 3 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CEM server received below post event: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "New event received ; event type3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Recevied REQ_ACK from subs 3, For Rq 5, Gen-id  3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Ack pushed: subs_id, for_req, gen_id: 3,   5,   3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Queued REQ_ACK from subs 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Pri_id 2 callback notified. Msg gen id 3 to subs_id: 3 and  size_to_be_sent:115760"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Check ack from subscriber 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Received ACK from subscriber 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Ack received from subs id 3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "CEM GRPC server start publish event to subs_id 4 subs IP 127.0.0.4 port number 5673"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CL server start publish event as below: CEM ==> client"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 2 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: \"my-svc-3\" event_status: READY ip: \"127.0.0.4\" } } } } req_data { } old_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: \"my-svc-1\" Cluster_IP: \"127.0.0.2\" state: 3 global_gen_id: 1 } mems { name: \"my-svc-2\" Cluster_IP: \"127.0.0.3\" state: 3 global_gen_id: 2 } mems { name: \"my-svc-3\" Cluster_IP: \"127.0.0.4\" state: 3 global_gen_id: 3 } } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "GRPC CEM server received below post event: client ==> CEM"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 4 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "New event received ; event type3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Recevied REQ_ACK from subs 4, For Rq 5, Gen-id  3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Ack pushed: subs_id, for_req, gen_id: 4,   5,   3"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Queued REQ_ACK from subs 4"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "publish event rpc succeeded."
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Pri_id 2 callback notified. Msg gen id 3 to subs_id: 4 and  size_to_be_sent:115760"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Check ack from subscriber 4"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Received ACK from subscriber 4"
+  },
+  {
+    "timestamp": "2023-06-21 20:07:46",
+    "type": "default",
+    "message": "Ack received from subs id 4"
+  }
+]

@@ -1,0 +1,288 @@
+[ 2023-06-21 20:04:28 ]  main() : creating thread, 0
+[ 2023-06-21 20:04:28 ]  main() : creating thread, 1
+[ 2023-06-21 20:04:28 ]  Thread with id : 0  
+ 
+[ 2023-06-21 20:04:28 ]  Thread with id : 1  
+ 
+[ 2023-06-21 20:04:28 ]  CEM GRPC server start listening:
+[ 2023-06-21 20:04:28 ]  Main: completed thread id :0
+[ 2023-06-21 20:04:28 ]    exiting with status :0
+[ 2023-06-21 20:05:41 ]  GRPC CEM server received below message: client ==> CEM 
+[ 2023-06-21 20:05:41 ]  clus_req { req_type: REQ_SUBS req_info { sub_info { svc_name: "my-svc-1" clus_ip: "127.0.0.2" high_priority_list { high_svc_pri: 2 } conn_client_rq: 1 } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:05:41 ]  New event received ; event type1
+[ 2023-06-21 20:05:41 ]  Event type received REQ_SUBS from subs my-svc-1
+[ 2023-06-21 20:05:41 ]   Not Found subscriber in the subscriber list my-svc-1
+[ 2023-06-21 20:05:41 ]  Subscriber my-svc-1 is a new subscriber 
+[ 2023-06-21 20:05:41 ]  Session destroy for SUBS rq for subscriber my-svc-1
+Creating svc event for SUBS rq for subscriber my-svc-1
+[ 2023-06-21 20:05:41 ]  Added conn for subs 2 current high svc pri 2
+[ 2023-06-21 20:05:41 ]  REQ_SUBS:  Subs_id 2
+[ 2023-06-21 20:05:41 ]  Updated Subscriber 2 to subs_list for REQ TYPE 1
+[ 2023-06-21 20:05:41 ]  Subs_id : 2
+[ 2023-06-21 20:05:41 ]  Process event message: Print ACK to be sent: members
+[ 2023-06-21 20:05:41 ]  Service Members : 
+[ 2023-06-21 20:05:41 ]  CEM GRPC server start sending back ACK event to clus_IP: 127.0.0.2 port number 5673
+[ 2023-06-21 20:05:41 ]  Couldn't find existing GRPC session for client 127.0.0.2:5673
+[ 2023-06-21 20:05:41 ]  GRPC client session create on 127.0.0.2:5673
+[ 2023-06-21 20:05:41 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:05:41 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { } for_req: REQ_SUBS } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:05:41 ]  publish event rpc succeeded.
+[ 2023-06-21 20:05:41 ]  ACK sent  to SUBS 2  msg send size 1
+[ 2023-06-21 20:05:41 ]  REQ_SUBS: Birth Gen Id 1
+[ 2023-06-21 20:05:41 ]  Message Queued for subs_id  2  Client RQ 1 Gen id 1
+[ 2023-06-21 20:05:41 ]   Cur Services list .....
+   Membership: Services
+        SVC name: my-svc-1           SVC IP: 127.0.0.2             SVC-state: ready
+
+   Membership: Nodes
+[ 2023-06-21 20:05:41 ]  
+[ 2023-06-21 20:05:41 ]  Queued the event for subs my-svc-1
+[ 2023-06-21 20:05:41 ]  Found message in the Queue
+[ 2023-06-21 20:05:41 ]  Current subscribers to receive the event to exe pri_id callback 1
+[ 2023-06-21 20:05:41 ]  CEM GRPC server start publish event to subs_id 2 subs IP 127.0.0.2 port number 5673
+[ 2023-06-21 20:05:41 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:05:41 ]  clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 2 cur_exe_pri: 1 cur_id: 1 gen_id { global_seq_id: 1 subs_id: 2 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-1" event_status: READY ip: "127.0.0.2" } } } } req_data { } old_mem_i { } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } } }
+[ 2023-06-21 20:05:41 ]  GRPC CEM server received below post event: client ==> CEM 
+[ 2023-06-21 20:05:41 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { global_seq_id: 1 subs_id: 2 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:05:41 ]  New event received ; event type3
+[ 2023-06-21 20:05:41 ]  Recevied REQ_ACK from subs 2, For Rq 5, Gen-id  1
+[ 2023-06-21 20:05:42 ]  Ack pushed: subs_id, for_req, gen_id: 2,   5,   1
+[ 2023-06-21 20:05:42 ]  Queued REQ_ACK from subs 2
+[ 2023-06-21 20:05:42 ]  publish event rpc succeeded.
+[ 2023-06-21 20:05:42 ]  Pri_id 1 callback notified. Msg gen id 1 to subs_id: 2 and  size_to_be_sent:115760
+[ 2023-06-21 20:05:42 ]  Check ack from subscriber 2
+[ 2023-06-21 20:05:42 ]  Received ACK from subscriber 2
+[ 2023-06-21 20:05:42 ]  Ack received from subs id 2
+[ 2023-06-21 20:05:42 ]  Current subscribers to receive the event to exe pri_id callback 2
+[ 2023-06-21 20:05:42 ]  CEM GRPC server start publish event to subs_id 2 subs IP 127.0.0.2 port number 5673
+[ 2023-06-21 20:05:42 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:05:42 ]  clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 2 cur_exe_pri: 2 cur_id: 1 gen_id { global_seq_id: 1 subs_id: 2 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-1" event_status: READY ip: "127.0.0.2" } } } } req_data { } old_mem_i { } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } } }
+[ 2023-06-21 20:05:42 ]  GRPC CEM server received below post event: client ==> CEM 
+[ 2023-06-21 20:05:42 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { global_seq_id: 1 subs_id: 2 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:05:42 ]  New event received ; event type3
+[ 2023-06-21 20:05:42 ]  Recevied REQ_ACK from subs 2, For Rq 5, Gen-id  1
+[ 2023-06-21 20:05:42 ]  Ack pushed: subs_id, for_req, gen_id: 2,   5,   1
+[ 2023-06-21 20:05:42 ]  Queued REQ_ACK from subs 2
+[ 2023-06-21 20:05:42 ]  publish event rpc succeeded.
+[ 2023-06-21 20:05:42 ]  Pri_id 2 callback notified. Msg gen id 1 to subs_id: 2 and  size_to_be_sent:115760
+[ 2023-06-21 20:05:42 ]  Check ack from subscriber 2
+[ 2023-06-21 20:05:42 ]  Received ACK from subscriber 2
+[ 2023-06-21 20:05:42 ]  Ack received from subs id 2
+[ 2023-06-21 20:06:30 ]  GRPC CEM server received below message: client ==> CEM 
+[ 2023-06-21 20:06:30 ]  clus_req { req_type: REQ_SUBS req_info { sub_info { svc_name: "my-svc-2" clus_ip: "127.0.0.3" high_priority_list { high_svc_pri: 2 } conn_client_rq: 1 } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:06:30 ]  New event received ; event type1
+[ 2023-06-21 20:06:30 ]  Event type received REQ_SUBS from subs my-svc-2
+[ 2023-06-21 20:06:30 ]   Not Found subscriber in the subscriber list my-svc-2
+[ 2023-06-21 20:06:30 ]  Subscriber my-svc-2 is a new subscriber 
+[ 2023-06-21 20:06:30 ]  Session destroy for SUBS rq for subscriber my-svc-2
+Creating svc event for SUBS rq for subscriber my-svc-2
+[ 2023-06-21 20:06:30 ]  Added conn for subs 3 current high svc pri 2
+[ 2023-06-21 20:06:30 ]  REQ_SUBS:  Subs_id 3
+[ 2023-06-21 20:06:30 ]  Updated Subscriber 3 to subs_list for REQ TYPE 1
+[ 2023-06-21 20:06:30 ]  Subs_id : 2
+[ 2023-06-21 20:06:30 ]  Subs_id : 3
+[ 2023-06-21 20:06:30 ]  Process event message: Print ACK to be sent: members
+[ 2023-06-21 20:06:30 ]  Service Members : 
+0: my-svc-1, IP: 127.0.0.2, state: 3
+[ 2023-06-21 20:06:30 ]  CEM GRPC server start sending back ACK event to clus_IP: 127.0.0.3 port number 5673
+[ 2023-06-21 20:06:30 ]  Couldn't find existing GRPC session for client 127.0.0.3:5673
+[ 2023-06-21 20:06:30 ]  GRPC client session create on 127.0.0.3:5673
+[ 2023-06-21 20:06:30 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:06:30 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 3 gen_id { } for_req: REQ_SUBS } } req_data { } old_mem_i { } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } } }
+[ 2023-06-21 20:06:30 ]  publish event rpc succeeded.
+[ 2023-06-21 20:06:30 ]  ACK sent  to SUBS 3  msg send size 1
+[ 2023-06-21 20:06:30 ]  REQ_SUBS: Birth Gen Id 2
+[ 2023-06-21 20:06:30 ]  Message Queued for subs_id  3  Client RQ 1 Gen id 2
+[ 2023-06-21 20:06:30 ]   Cur Services list .....
+   Membership: Services
+        SVC name: my-svc-1           SVC IP: 127.0.0.2             SVC-state: ready
+
+        SVC name: my-svc-2           SVC IP: 127.0.0.3             SVC-state: ready
+
+   Membership: Nodes
+[ 2023-06-21 20:06:30 ]  
+[ 2023-06-21 20:06:30 ]  Queued the event for subs my-svc-2
+[ 2023-06-21 20:06:30 ]  Found message in the Queue
+[ 2023-06-21 20:06:30 ]  Current subscribers to receive the event to exe pri_id callback 1
+[ 2023-06-21 20:06:30 ]  CEM GRPC server start publish event to subs_id 2 subs IP 127.0.0.2 port number 5673
+[ 2023-06-21 20:06:30 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:06:30 ]  clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 3 cur_exe_pri: 1 cur_id: 2 gen_id { global_seq_id: 2 subs_id: 3 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-2" event_status: READY ip: "127.0.0.3" } } } } req_data { } old_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } }
+[ 2023-06-21 20:06:30 ]  GRPC CEM server received below post event: client ==> CEM 
+[ 2023-06-21 20:06:30 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { global_seq_id: 2 subs_id: 3 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:06:30 ]  New event received ; event type3
+[ 2023-06-21 20:06:30 ]  Recevied REQ_ACK from subs 2, For Rq 5, Gen-id  2
+[ 2023-06-21 20:06:30 ]  Ack pushed: subs_id, for_req, gen_id: 2,   5,   2
+[ 2023-06-21 20:06:30 ]  Queued REQ_ACK from subs 2
+[ 2023-06-21 20:06:30 ]  publish event rpc succeeded.
+[ 2023-06-21 20:06:30 ]  Pri_id 1 callback notified. Msg gen id 2 to subs_id: 2 and  size_to_be_sent:115760
+[ 2023-06-21 20:06:30 ]  Check ack from subscriber 2
+[ 2023-06-21 20:06:30 ]  Received ACK from subscriber 2
+[ 2023-06-21 20:06:30 ]  Ack received from subs id 2
+[ 2023-06-21 20:06:30 ]  CEM GRPC server start publish event to subs_id 3 subs IP 127.0.0.3 port number 5673
+[ 2023-06-21 20:06:30 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:06:30 ]  clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 3 cur_exe_pri: 1 cur_id: 2 gen_id { global_seq_id: 2 subs_id: 3 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-2" event_status: READY ip: "127.0.0.3" } } } } req_data { } old_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } }
+[ 2023-06-21 20:06:30 ]  GRPC CEM server received below post event: client ==> CEM 
+[ 2023-06-21 20:06:30 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 3 gen_id { global_seq_id: 2 subs_id: 3 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:06:30 ]  New event received ; event type3
+[ 2023-06-21 20:06:30 ]  Recevied REQ_ACK from subs 3, For Rq 5, Gen-id  2
+[ 2023-06-21 20:06:30 ]  Ack pushed: subs_id, for_req, gen_id: 3,   5,   2
+[ 2023-06-21 20:06:30 ]  Queued REQ_ACK from subs 3
+[ 2023-06-21 20:06:30 ]  publish event rpc succeeded.
+[ 2023-06-21 20:06:30 ]  Pri_id 1 callback notified. Msg gen id 2 to subs_id: 3 and  size_to_be_sent:115760
+[ 2023-06-21 20:06:30 ]  Check ack from subscriber 3
+[ 2023-06-21 20:06:30 ]  Received ACK from subscriber 3
+[ 2023-06-21 20:06:30 ]  Ack received from subs id 3
+[ 2023-06-21 20:06:30 ]  Current subscribers to receive the event to exe pri_id callback 2
+[ 2023-06-21 20:06:30 ]  CEM GRPC server start publish event to subs_id 2 subs IP 127.0.0.2 port number 5673
+[ 2023-06-21 20:06:30 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:06:30 ]  clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 3 cur_exe_pri: 2 cur_id: 2 gen_id { global_seq_id: 2 subs_id: 3 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-2" event_status: READY ip: "127.0.0.3" } } } } req_data { } old_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } }
+[ 2023-06-21 20:06:30 ]  GRPC CEM server received below post event: client ==> CEM 
+[ 2023-06-21 20:06:30 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { global_seq_id: 2 subs_id: 3 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:06:30 ]  New event received ; event type3
+[ 2023-06-21 20:06:30 ]  Recevied REQ_ACK from subs 2, For Rq 5, Gen-id  2
+[ 2023-06-21 20:06:30 ]  Ack pushed: subs_id, for_req, gen_id: 2,   5,   2
+[ 2023-06-21 20:06:30 ]  Queued REQ_ACK from subs 2
+[ 2023-06-21 20:06:30 ]  publish event rpc succeeded.
+[ 2023-06-21 20:06:30 ]  Pri_id 2 callback notified. Msg gen id 2 to subs_id: 2 and  size_to_be_sent:115760
+[ 2023-06-21 20:06:30 ]  Check ack from subscriber 2
+[ 2023-06-21 20:06:30 ]  Received ACK from subscriber 2
+[ 2023-06-21 20:06:30 ]  Ack received from subs id 2
+[ 2023-06-21 20:06:30 ]  CEM GRPC server start publish event to subs_id 3 subs IP 127.0.0.3 port number 5673
+[ 2023-06-21 20:06:30 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:06:30 ]  clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 3 cur_exe_pri: 2 cur_id: 2 gen_id { global_seq_id: 2 subs_id: 3 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-2" event_status: READY ip: "127.0.0.3" } } } } req_data { } old_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } }
+[ 2023-06-21 20:06:30 ]  GRPC CEM server received below post event: client ==> CEM 
+[ 2023-06-21 20:06:30 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 3 gen_id { global_seq_id: 2 subs_id: 3 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:06:30 ]  New event received ; event type3
+[ 2023-06-21 20:06:30 ]  Recevied REQ_ACK from subs 3, For Rq 5, Gen-id  2
+[ 2023-06-21 20:06:30 ]  Ack pushed: subs_id, for_req, gen_id: 3,   5,   2
+[ 2023-06-21 20:06:30 ]  Queued REQ_ACK from subs 3
+[ 2023-06-21 20:06:30 ]  publish event rpc succeeded.
+[ 2023-06-21 20:06:30 ]  Pri_id 2 callback notified. Msg gen id 2 to subs_id: 3 and  size_to_be_sent:115760
+[ 2023-06-21 20:06:30 ]  Check ack from subscriber 3
+[ 2023-06-21 20:06:30 ]  Received ACK from subscriber 3
+[ 2023-06-21 20:06:30 ]  Ack received from subs id 3
+[ 2023-06-21 20:07:46 ]  GRPC CEM server received below message: client ==> CEM 
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_SUBS req_info { sub_info { svc_name: "my-svc-3" clus_ip: "127.0.0.4" high_priority_list { high_svc_pri: 2 } conn_client_rq: 1 } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:07:46 ]  New event received ; event type1
+[ 2023-06-21 20:07:46 ]  Event type received REQ_SUBS from subs my-svc-3
+[ 2023-06-21 20:07:46 ]   Not Found subscriber in the subscriber list my-svc-3
+[ 2023-06-21 20:07:46 ]  Subscriber my-svc-3 is a new subscriber 
+[ 2023-06-21 20:07:46 ]  Session destroy for SUBS rq for subscriber my-svc-3
+Creating svc event for SUBS rq for subscriber my-svc-3
+[ 2023-06-21 20:07:46 ]  Added conn for subs 4 current high svc pri 2
+[ 2023-06-21 20:07:46 ]  REQ_SUBS:  Subs_id 4
+[ 2023-06-21 20:07:46 ]  Updated Subscriber 4 to subs_list for REQ TYPE 1
+[ 2023-06-21 20:07:46 ]  Subs_id : 2
+[ 2023-06-21 20:07:46 ]  Subs_id : 3
+[ 2023-06-21 20:07:46 ]  Subs_id : 4
+[ 2023-06-21 20:07:46 ]  Process event message: Print ACK to be sent: members
+[ 2023-06-21 20:07:46 ]  Service Members : 
+0: my-svc-1, IP: 127.0.0.2, state: 3
+1: my-svc-2, IP: 127.0.0.3, state: 3
+[ 2023-06-21 20:07:46 ]  CEM GRPC server start sending back ACK event to clus_IP: 127.0.0.4 port number 5673
+[ 2023-06-21 20:07:46 ]  Couldn't find existing GRPC session for client 127.0.0.4:5673
+[ 2023-06-21 20:07:46 ]  GRPC client session create on 127.0.0.4:5673
+[ 2023-06-21 20:07:46 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 4 gen_id { } for_req: REQ_SUBS } } req_data { } old_mem_i { } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } }
+[ 2023-06-21 20:07:46 ]  publish event rpc succeeded.
+[ 2023-06-21 20:07:46 ]  ACK sent  to SUBS 4  msg send size 1
+[ 2023-06-21 20:07:46 ]  REQ_SUBS: Birth Gen Id 3
+[ 2023-06-21 20:07:46 ]  Message Queued for subs_id  4  Client RQ 1 Gen id 3
+[ 2023-06-21 20:07:46 ]   Cur Services list .....
+   Membership: Services
+        SVC name: my-svc-1           SVC IP: 127.0.0.2             SVC-state: ready
+
+        SVC name: my-svc-2           SVC IP: 127.0.0.3             SVC-state: ready
+
+        SVC name: my-svc-3           SVC IP: 127.0.0.4             SVC-state: ready
+
+   Membership: Nodes
+[ 2023-06-21 20:07:46 ]  
+[ 2023-06-21 20:07:46 ]  Queued the event for subs my-svc-3
+[ 2023-06-21 20:07:46 ]  Found message in the Queue
+[ 2023-06-21 20:07:46 ]  Current subscribers to receive the event to exe pri_id callback 1
+[ 2023-06-21 20:07:46 ]  CEM GRPC server start publish event to subs_id 2 subs IP 127.0.0.2 port number 5673
+[ 2023-06-21 20:07:46 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 1 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-3" event_status: READY ip: "127.0.0.4" } } } } req_data { } old_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } mems { name: "my-svc-3" Cluster_IP: "127.0.0.4" state: 3 global_gen_id: 3 } } }
+[ 2023-06-21 20:07:46 ]  GRPC CEM server received below post event: client ==> CEM 
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:07:46 ]  New event received ; event type3
+[ 2023-06-21 20:07:46 ]  Recevied REQ_ACK from subs 2, For Rq 5, Gen-id  3
+[ 2023-06-21 20:07:46 ]  Ack pushed: subs_id, for_req, gen_id: 2,   5,   3
+[ 2023-06-21 20:07:46 ]  Queued REQ_ACK from subs 2
+[ 2023-06-21 20:07:46 ]  publish event rpc succeeded.
+[ 2023-06-21 20:07:46 ]  Pri_id 1 callback notified. Msg gen id 3 to subs_id: 2 and  size_to_be_sent:115760
+[ 2023-06-21 20:07:46 ]  Check ack from subscriber 2
+[ 2023-06-21 20:07:46 ]  Received ACK from subscriber 2
+[ 2023-06-21 20:07:46 ]  Ack received from subs id 2
+[ 2023-06-21 20:07:46 ]  CEM GRPC server start publish event to subs_id 3 subs IP 127.0.0.3 port number 5673
+[ 2023-06-21 20:07:46 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 1 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-3" event_status: READY ip: "127.0.0.4" } } } } req_data { } old_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } mems { name: "my-svc-3" Cluster_IP: "127.0.0.4" state: 3 global_gen_id: 3 } } }
+[ 2023-06-21 20:07:46 ]  GRPC CEM server received below post event: client ==> CEM 
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:07:46 ]  New event received ; event type3
+[ 2023-06-21 20:07:46 ]  Recevied REQ_ACK from subs 3, For Rq 5, Gen-id  3
+[ 2023-06-21 20:07:46 ]  Ack pushed: subs_id, for_req, gen_id: 3,   5,   3
+[ 2023-06-21 20:07:46 ]  Queued REQ_ACK from subs 3
+[ 2023-06-21 20:07:46 ]  publish event rpc succeeded.
+[ 2023-06-21 20:07:46 ]  Pri_id 1 callback notified. Msg gen id 3 to subs_id: 3 and  size_to_be_sent:115760
+[ 2023-06-21 20:07:46 ]  Check ack from subscriber 3
+[ 2023-06-21 20:07:46 ]  Received ACK from subscriber 3
+[ 2023-06-21 20:07:46 ]  Ack received from subs id 3
+[ 2023-06-21 20:07:46 ]  CEM GRPC server start publish event to subs_id 4 subs IP 127.0.0.4 port number 5673
+[ 2023-06-21 20:07:46 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 1 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-3" event_status: READY ip: "127.0.0.4" } } } } req_data { } old_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } mems { name: "my-svc-3" Cluster_IP: "127.0.0.4" state: 3 global_gen_id: 3 } } }
+[ 2023-06-21 20:07:46 ]  GRPC CEM server received below post event: client ==> CEM 
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 4 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:07:46 ]  New event received ; event type3
+[ 2023-06-21 20:07:46 ]  Recevied REQ_ACK from subs 4, For Rq 5, Gen-id  3
+[ 2023-06-21 20:07:46 ]  Ack pushed: subs_id, for_req, gen_id: 4,   5,   3
+[ 2023-06-21 20:07:46 ]  Queued REQ_ACK from subs 4
+[ 2023-06-21 20:07:46 ]  publish event rpc succeeded.
+[ 2023-06-21 20:07:46 ]  Pri_id 1 callback notified. Msg gen id 3 to subs_id: 4 and  size_to_be_sent:115760
+[ 2023-06-21 20:07:46 ]  Check ack from subscriber 4
+[ 2023-06-21 20:07:46 ]  Received ACK from subscriber 4
+[ 2023-06-21 20:07:46 ]  Ack received from subs id 4
+[ 2023-06-21 20:07:46 ]  Current subscribers to receive the event to exe pri_id callback 2
+[ 2023-06-21 20:07:46 ]  CEM GRPC server start publish event to subs_id 2 subs IP 127.0.0.2 port number 5673
+[ 2023-06-21 20:07:46 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 2 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-3" event_status: READY ip: "127.0.0.4" } } } } req_data { } old_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } mems { name: "my-svc-3" Cluster_IP: "127.0.0.4" state: 3 global_gen_id: 3 } } }
+[ 2023-06-21 20:07:46 ]  GRPC CEM server received below post event: client ==> CEM 
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 2 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:07:46 ]  New event received ; event type3
+[ 2023-06-21 20:07:46 ]  Recevied REQ_ACK from subs 2, For Rq 5, Gen-id  3
+[ 2023-06-21 20:07:46 ]  Ack pushed: subs_id, for_req, gen_id: 2,   5,   3
+[ 2023-06-21 20:07:46 ]  Queued REQ_ACK from subs 2
+[ 2023-06-21 20:07:46 ]  publish event rpc succeeded.
+[ 2023-06-21 20:07:46 ]  Pri_id 2 callback notified. Msg gen id 3 to subs_id: 2 and  size_to_be_sent:115760
+[ 2023-06-21 20:07:46 ]  Check ack from subscriber 2
+[ 2023-06-21 20:07:46 ]  Received ACK from subscriber 2
+[ 2023-06-21 20:07:46 ]  Ack received from subs id 2
+[ 2023-06-21 20:07:46 ]  CEM GRPC server start publish event to subs_id 3 subs IP 127.0.0.3 port number 5673
+[ 2023-06-21 20:07:46 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 2 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-3" event_status: READY ip: "127.0.0.4" } } } } req_data { } old_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } mems { name: "my-svc-3" Cluster_IP: "127.0.0.4" state: 3 global_gen_id: 3 } } }
+[ 2023-06-21 20:07:46 ]  GRPC CEM server received below post event: client ==> CEM 
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:07:46 ]  New event received ; event type3
+[ 2023-06-21 20:07:46 ]  Recevied REQ_ACK from subs 3, For Rq 5, Gen-id  3
+[ 2023-06-21 20:07:46 ]  Ack pushed: subs_id, for_req, gen_id: 3,   5,   3
+[ 2023-06-21 20:07:46 ]  Queued REQ_ACK from subs 3
+[ 2023-06-21 20:07:46 ]  publish event rpc succeeded.
+[ 2023-06-21 20:07:46 ]  Pri_id 2 callback notified. Msg gen id 3 to subs_id: 3 and  size_to_be_sent:115760
+[ 2023-06-21 20:07:46 ]  Check ack from subscriber 3
+[ 2023-06-21 20:07:46 ]  Received ACK from subscriber 3
+[ 2023-06-21 20:07:46 ]  Ack received from subs id 3
+[ 2023-06-21 20:07:46 ]  CEM GRPC server start publish event to subs_id 4 subs IP 127.0.0.4 port number 5673
+[ 2023-06-21 20:07:46 ]  GRPC CL server start publish event as below: CEM ==> client
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_RCV_EVENT req_info { event_info { subs_id: 4 cur_exe_pri: 2 cur_id: 3 gen_id { global_seq_id: 3 subs_id: 4 } event_type: K8S_SERVICE_EVENT event_pld { k8s_event { name: "my-svc-3" event_status: READY ip: "127.0.0.4" } } } } req_data { } old_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } } new_mem_i { mems { name: "my-svc-1" Cluster_IP: "127.0.0.2" state: 3 global_gen_id: 1 } mems { name: "my-svc-2" Cluster_IP: "127.0.0.3" state: 3 global_gen_id: 2 } mems { name: "my-svc-3" Cluster_IP: "127.0.0.4" state: 3 global_gen_id: 3 } } }
+[ 2023-06-21 20:07:46 ]  GRPC CEM server received below post event: client ==> CEM 
+[ 2023-06-21 20:07:46 ]  clus_req { req_type: REQ_ACK req_info { ack_info { subs_id: 4 gen_id { global_seq_id: 3 subs_id: 4 } for_req: REQ_RCV_EVENT } } req_data { } old_mem_i { } new_mem_i { } }
+[ 2023-06-21 20:07:46 ]  New event received ; event type3
+[ 2023-06-21 20:07:46 ]  Recevied REQ_ACK from subs 4, For Rq 5, Gen-id  3
+[ 2023-06-21 20:07:46 ]  Ack pushed: subs_id, for_req, gen_id: 4,   5,   3
+[ 2023-06-21 20:07:46 ]  Queued REQ_ACK from subs 4
+[ 2023-06-21 20:07:46 ]  publish event rpc succeeded.
+[ 2023-06-21 20:07:46 ]  Pri_id 2 callback notified. Msg gen id 3 to subs_id: 4 and  size_to_be_sent:115760
+[ 2023-06-21 20:07:46 ]  Check ack from subscriber 4
+[ 2023-06-21 20:07:46 ]  Received ACK from subscriber 4
+[ 2023-06-21 20:07:46 ]  Ack received from subs id 4

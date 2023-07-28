@@ -1,0 +1,113 @@
+linkedin + github
+
+
+Module: Cluster Event Notification Module
+	Kafka streaming analytics platform
+	Membership module
+	keeps track of its members
+		i have 10 members
+	grab events from kubernetes API
+	whenever a new member subscribes or existing member goes down
+		services need to know abt other services
+	
+	running in a kubernetes env
+	other microservices that can subscribe to it
+	publish all these events to its subscribers
+	reliable
+	no events should be missed
+	each event should only be processed only once
+	
+also allows clients to specify heirarchy
+	one subscriber may receive a notification before another subscriber
+	subscriber with higher priority should process event before subscriber with lower priority
+	
+Observability and Visibility
+	several logs for CEM for all events
+	log analysis tool that can describe the behavior, errors, and matrix 
+	logs are all in text form
+	prometheus
+	grafana
+
+Doing simulations for CEM
+	v
+
+
+1.	CEM log analysis to provide stats and Metrics
+Log analysis provides useful metrics that paint a clear picture of what has happened across the CEM and its clients . We can use this data to improve or solve performance issues within CEM. Looking at the bigger picture, we need to analyze logs to proactively and reactively mitigate risks, unerstand behavior and get stats. We can use Atlantic Add-ons like Graphana, Prometheus etc.. to search and analyse
+
+Python automation tests
+Describe a time when you worked under many teams
+Type of working environment
+why tesla
+tell me about yourself
+When you had to deliver quickly
+Had to learn something new and how
+
+i have to keep a history of queue state
+queue state changes whenever an event message gets queued or removed
+fixed interval polling
+what to dump?
+	ged-id
+	event_name
+	cur_mem_list (just their subsc. ids)
+
+svc_name is same as subs_name
+
+root@10.227.98.58 
+Password ChangeM3!
+cem and cem_client  are installed
+
+Metrics to Display:
+
+Dump Queue state changes --> whenever event-message gets Queued, or gets removed
+   { Gen-id, event_name, producer_name, (cur_mem: subs_id_list)}, 
+
+Subscriber_list { {subs_Id, subs_name, last_event_posted, birth_gen_id, last_event_rcvd, ctr_reboot_times, ctr_svc_down, subs_status},    } 
+
+Failed Notification
+   {Gen_id; pri_id, subs_id},  { ...},  {...}
+
+
+//clus reg parser
+
+//subscriber list parser
+
+//failed notification parser
+
+//TBD parser
+
+Timestamp
+Event Gen id
+Event Name
+	Service Up
+	Service down
+	Custom Event
+Current Members
+Subscriber ids
+
+Subsc
+If a message failed to get queued
+Qstate info limited
+subscriber list has more details than just qstate changes
+
+do the json parsing for all event types
+	req ack
+	req subs
+	req publish
+	req unsub
+	
+service up, service down, custom
+
+Catch-Up Tasks
+service down, no ack are the two types of failur
+
+CEM server notifies everybody
+server will keep waiting for ack until service down 
+
+Tasks for Today
+Apply to Summer 24 Internships
+Dell coding
+Apply to Spring 24 Internships
+Georgia Tech Onboaring
+
+
